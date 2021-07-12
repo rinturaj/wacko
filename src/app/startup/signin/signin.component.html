@@ -1,0 +1,45 @@
+<ion-content color="dark">
+  <div class="container vh-100">
+    <div class="row h-50 justify-content-center d-flex align-items-center  align-content-center">
+      <div class=" w-100 text-center">
+        <img src="assets/icon/Wacko_icon.png" alt="image" height="100px" class="form-image rotate-in-center w68">
+      </div>
+     
+      <h2 class="bold text-center tracking-in-contract text-white">WACKO</h2>
+    </div>
+
+    <div class="row h-50 justify-content-center d-flex ">
+      <form >
+        <div class="form-group boxed slide-right" >
+          <div class="input-wrapper">
+            <input type="text" class="form-control rounded-pill  border-dark shadow-drop-2-center" id="email1" placeholder="UserName">
+            <i class="clear-input">
+              <ion-icon name="close-circle" role="img" class="md hydrated" aria-label="close circle"></ion-icon>
+            </i>
+          </div>
+        </div>
+
+        <div class="form-group boxed slide-right" *ngIf="next">
+          <div class="input-wrapper">
+            <input type="password" class="form-control rounded-pill border-dark shadow-drop-2-center" id="password1" placeholder="Password">
+            <i class="clear-input">
+              <ion-icon name="close-circle" role="img" class="md hydrated" aria-label="close circle"></ion-icon>
+            </i>
+          </div>
+        </div>
+
+        <div class="form-group boxed">
+          <div class="input-wrapper">
+            <button type="button" (click)="next=!next" class="btn btn-primary  shadowed  btn-block  ">Log in</button>
+          </div>
+        </div>
+
+       
+
+        
+
+      </form>
+    </div>
+
+  </div>
+</ion-content>
