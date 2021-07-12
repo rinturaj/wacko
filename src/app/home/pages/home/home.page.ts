@@ -10,22 +10,21 @@ export class HomePage {
   constructor() { }
 
   onClick(event) {
-    let systemDark = window.matchMedia("(prefers-color-scheme: dark)");
-    systemDark.addListener(this.colorTest);
-    if (event.detail.checked) {
-      document.body.setAttribute('data-theme', 'dark');
-    }
-    else {
-      document.body.setAttribute('data-theme', 'light');
+    console.log(event);
+    
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+
+    toggleDarkTheme(prefersDark.matches);
+    
+    // Listen for changes to the prefers-color-scheme media query
+    prefersDark.addListener((mediaQuery) => toggleDarkTheme(mediaQuery.matches));
+    
+    // Add or remove the "dark" class based on if the media query matches
+    function toggleDarkTheme(shouldAdd) {
+      document.body.classList.toggle('dark', shouldAdd);
     }
 
   }
 
-  colorTest(systemInitiatedDark) {
-    if (systemInitiatedDark.matches) {
-      document.body.setAttribute('data-theme', 'dark');
-    } else {
-      document.body.setAttribute('data-theme', 'light');
-    }
-  }
+ 
 }

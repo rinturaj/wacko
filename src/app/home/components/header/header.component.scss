@@ -1,0 +1,17 @@
+::ng-deep.user-avatar {
+  display: flex;
+  align-items: center;
+  justify-items: end;
+  flex-direction: row;
+  justify-content: flex-end;
+  app-avatar {
+    div {
+      img {
+        width: 30px !important;
+        height: 30px !important;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+          rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+      }
+    }
+  }
+}
