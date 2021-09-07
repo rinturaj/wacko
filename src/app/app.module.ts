@@ -8,19 +8,18 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { NgGunModule, NgGunOptions } from 'ngx-gun';
-const ngGunOptions: NgGunOptions = {
-  peers: ['https://gunserver-wacko.herokuapp.com/gun']
-}
+import { GunDb } from './services/gun-db.service';
+
 
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), NgGunModule.forRoot(ngGunOptions),
+  imports: [BrowserModule, IonicModule.forRoot(),
     AppRoutingModule],
   providers: [
     StatusBar,
     SplashScreen,
+    GunDb,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]

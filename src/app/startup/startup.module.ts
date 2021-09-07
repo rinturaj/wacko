@@ -4,6 +4,7 @@ import { RouterModule, Route, Routes } from '@angular/router';
 import { SigninComponent } from './signin/signin.component';
 import { GetstartedComponent } from './getstarted/getstarted.component';
 import { IonicModule } from '@ionic/angular';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 const route: Routes =
   [
@@ -23,6 +24,8 @@ const route: Routes =
   imports: [
     CommonModule,
     IonicModule,
+    ReactiveFormsModule,
+    FormsModule,
     RouterModule.forChild(route)
   ]
 })

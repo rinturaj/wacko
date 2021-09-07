@@ -1,48 +1,50 @@
 <ion-content>
   <ion-grid class="ion-padding-top ">
-    <ion-row>
-      <ion-col size="12" class="ion-padding ">
-        <ion-item>
-          <ion-label position="stacked">Username</ion-label>
-          <ion-input></ion-input>
-        </ion-item>
-      </ion-col>
-      <ion-col size="12" class="ion-padding ">
-        <ion-item>
-          <ion-label position="stacked">Password</ion-label>
-          <ion-input type="password"></ion-input>
-        </ion-item>
-      </ion-col>
-    </ion-row>
-    <ion-row class="ion-padding ">
-      <ion-col size="9" >
-        <ion-row class="ion-align-items-center">
-          <ion-col size="auto">
-            <ion-icon color="primary" name="alert"></ion-icon>
-          </ion-col>
-          <ion-col>
-            <!-- <ion-text> -->
-            <span style="font-size: x-small ;"> If you are not registered. don't worry,
-              enter username and password. we will created an account for you</span>
+    <form #formRef="ngForm" (ngSubmit)="login(formRef.value)">
+      <ion-row>
+        <ion-col size="12" class="ion-padding ">
+          <ion-item>
+            <ion-label position="stacked">Username</ion-label>
+            <ion-input ngModel name="username" required></ion-input>
+          </ion-item>
+        </ion-col>
+        <ion-col size="12" class="ion-padding ">
+          <ion-item>
+            <ion-label position="stacked">Password</ion-label>
+            <ion-input  ngModel name="password" required type="password"></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row class="ion-padding ">
+        <ion-col size="9">
+          <ion-row class="ion-align-items-center">
+            <ion-col size="auto">
+              <ion-icon color="primary" name="alert"></ion-icon>
+            </ion-col>
+            <ion-col>
+              <!-- <ion-text> -->
+              <span style="font-size: x-small ;"> If you are not registered. don't worry,
+                enter username and password. we will created an account for you</span>
 
-            <!-- </ion-text> -->
-          </ion-col>
-        </ion-row>
-      </ion-col>
-      <ion-col size="3" class="ion-align-self-center ion-text-center" >
-        <ion-button>
-          <ion-icon color="light" name="chevron-forward"></ion-icon>
-        </ion-button>
-      </ion-col>
-    </ion-row>
+              <!-- </ion-text> -->
+            </ion-col>
+          </ion-row>
+        </ion-col>
+        <ion-col size="3" class="ion-align-self-center ion-text-center">
+          <ion-button type="submit" [disabled]="formRef.invalid">
+            <ion-icon color="light" name="chevron-forward"></ion-icon>
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </form>
   </ion-grid>
 </ion-content>
 <ion-footer>
   <ion-row>
-    <ion-col size="12" class="ion-text-center" >
+    <ion-col size="12" class="ion-text-center">
       <ion-icon color="primary" name="lock-closed"></ion-icon>
     </ion-col>
-    <ion-col size="12" class="ion-text-center ion-no-padding ion-padding-bottom" >
+    <ion-col size="12" class="ion-text-center ion-no-padding ion-padding-bottom">
       <p style="font-size: small;">Welcome to decentralized dating app network</p>
     </ion-col>
   </ion-row>
