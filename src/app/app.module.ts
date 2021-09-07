@@ -10,7 +10,7 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { NgGunModule, NgGunOptions } from 'ngx-gun';
 const ngGunOptions: NgGunOptions = {
-  // peers: [location.origin + '/gun']
+  peers: ['https://gunserver-wacko.herokuapp.com/gun']
 }
 
 @NgModule({

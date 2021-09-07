@@ -40,7 +40,9 @@
               }
             ],
             "scripts": [
-             
+             {
+               "input": "node_modules/gun/gun.min.js"
+             }
             ]
           },
           "configurations": {

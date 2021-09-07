@@ -16,11 +16,12 @@ export class SigninComponent implements OnInit {
 
   constructor( private _ngGun: NgGunService) { 
     this.db = this._ngGun.db
+    
+    
   }
 
   ngOnInit() {
     const testNode = this.db.get('test')
-
     this.subs = [
       // Keeps pushing values upon changes to this node:
       testNode.on().subscribe(data => {
