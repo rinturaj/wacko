@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GunDb } from 'src/app/services/gun-db.service';
 
 @Component({
   selector: 'app-header',
@@ -6,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
+  
+  constructor(public db: GunDb) { }
 
-  constructor() { }
-
-  ngOnInit() {}
+  ngOnInit() {
+  
+    this.db.user.get('alias').once((ack:any)=>{
+      console.log(ack);
+      this.db.username = ack
+    })
+  }
 
 }

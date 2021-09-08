@@ -17,16 +17,15 @@
       </ion-row>
       <ion-row class="ion-padding ">
         <ion-col size="9">
-          <ion-row class="ion-align-items-center">
+          <ion-row class="ion-align-items-center" *ngIf="err">
             <ion-col size="auto">
-              <ion-icon color="primary" name="alert"></ion-icon>
+              <ion-icon color="danger" name="alert"></ion-icon>
             </ion-col>
             <ion-col>
-              <!-- <ion-text> -->
-              <span style="font-size: x-small ;"> If you are not registered. don't worry,
-                enter username and password. we will created an account for you</span>
+              <ion-text color="danger">
+              <span   style="font-size: x-small ;"> {{err}}</span>
 
-              <!-- </ion-text> -->
+              </ion-text>
             </ion-col>
           </ion-row>
         </ion-col>

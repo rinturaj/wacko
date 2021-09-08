@@ -7,6 +7,7 @@ import { HomePage } from './pages/home/home.page';
 import { HomePageRoutingModule } from './home-routing.module';
 import { HeaderComponent } from './components/header/header.component';
 import { AvatarComponent } from './components/avatar/avatar.component';
+import { ProfilepageComponent } from './pages/profilepage/profilepage.component';
 
 
 @NgModule({
@@ -16,6 +17,6 @@ import { AvatarComponent } from './components/avatar/avatar.component';
     IonicModule,
     HomePageRoutingModule
   ],
-  declarations: [HomePage,HeaderComponent,AvatarComponent]
+  declarations: [HomePage,HeaderComponent,AvatarComponent,ProfilepageComponent]
 })
 export class HomePageModule {}
