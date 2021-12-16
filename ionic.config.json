@@ -1,5 +1,7 @@
 {
   "name": "Wacko",
-  "integrations": {},
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "angular"
 }
