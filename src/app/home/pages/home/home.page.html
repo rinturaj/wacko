@@ -1,25 +1,40 @@
 <app-header></app-header>
 
 <ion-content color="light">
+    <ion-grid class="ion-padding">
+        <app-viewprofile></app-viewprofile>
 
+    </ion-grid>
+    <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+        <ion-fab-button size="small" id="trigger-button" >
+          <ion-icon color="light" name="chevron-up-outline"></ion-icon>
+        </ion-fab-button>
+      </ion-fab>
+    
+    <ion-modal trigger="trigger-button" backdrop-dismiss="true" show-backdrop="false" [isOpen]="true"
+        [swipeToClose]="true" [breakpoints]="[0.1,0.3, 0.5, .8]" [initialBreakpoint]="0.2">
+        <ng-template>
+            <ion-grid>
+                <ion-row>
+                    <ion-col size="12" class="ion-padding-top ion-padding-start ion-padding-end ion-no-padding">
+                       <ion-text>
+                           Find Your Match
+                       </ion-text>
+                    </ion-col>
+                   
+                </ion-row>
+                <ion-row class="ion-padding">
+                    <ion-col size="3">
+                        <ui-avatar>
+                            <img src="https://randomuser.me/api/portraits/med/men/75.jpg" alt="">
+                            <span>RIntu</span>
+                        </ui-avatar>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+
+
+        </ng-template>
+    </ion-modal>
 
 </ion-content>
-<ion-footer class="ion-padding">
-    <ion-slides pager="false" [options]="slideOpts">
-        <ion-slide>
-            <app-avatar></app-avatar>
-        </ion-slide>
-        <ion-slide>
-            <app-avatar></app-avatar>
-        </ion-slide>
-        <ion-slide>
-            <app-avatar></app-avatar>
-        </ion-slide>
-        <ion-slide>
-            <app-avatar></app-avatar>
-        </ion-slide>
-        <ion-slide>
-            <app-avatar></app-avatar>
-        </ion-slide>
-    </ion-slides>
-</ion-footer>

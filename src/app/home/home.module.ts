@@ -8,6 +8,8 @@ import { HomePageRoutingModule } from './home-routing.module';
 import { HeaderComponent } from './components/header/header.component';
 import { AvatarComponent } from './components/avatar/avatar.component';
 import { ProfilepageComponent } from './pages/profilepage/profilepage.component';
+import { UiModule } from '../ui/ui.module';
+import { ViewprofileComponent } from './components/viewprofile/viewprofile.component';
 
 
 @NgModule({
@@ -15,8 +17,15 @@ import { ProfilepageComponent } from './pages/profilepage/profilepage.component'
     CommonModule,
     FormsModule,
     IonicModule,
-    HomePageRoutingModule
+    HomePageRoutingModule,
+    UiModule
   ],
-  declarations: [HomePage,HeaderComponent,AvatarComponent,ProfilepageComponent]
+  declarations: [
+    HomePage,
+    HeaderComponent,
+    AvatarComponent,
+    ProfilepageComponent,
+    ViewprofileComponent
+  ]
 })
-export class HomePageModule {}
+export class HomePageModule { }
