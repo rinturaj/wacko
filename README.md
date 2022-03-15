@@ -4,8 +4,11 @@
 </div>
 <br/>
 <div align="center">
-  ⚡️ <b> WACKO </b> ⚡️
-<p>WACKO is an open-source dating application for ios and android. which is developed on the Ionic framework </p>
+  ⚡️ <b> WACKO <a ><img src="https://img.shields.io/badge/dApps-green" /></a> </b> ⚡️
+    <p>Find your crazy partner</p>
+<p>WACKO is an open-source dating application for ios and android. which is developed on the Ionic framework
+
+</p>
 </div>
 <br />
 <p align="center">
@@ -20,23 +23,18 @@
   <a ><img src="https://img.shields.io/github/commit-activity/m/rinturaj/wacko" /></a>
   <a ><img src="https://img.shields.io/github/contributors/rinturaj/wacko" /></a>
   <a ><img src="https://img.shields.io/github/last-commit/rinturaj/wacko" /></a>
- 
-</p>
-<p align="center">
-  <a ><img src="https://img.shields.io/github/issues/rinturaj/wacko" /></a>
+   <a ><img src="https://img.shields.io/github/issues/rinturaj/wacko" /></a>
   <a ><img src="https://img.shields.io/github/issues-pr/rinturaj/wacko" /></a>
-  <a ><img src="https://img.shields.io/github/issues-closed-raw/rinturaj/wacko" /></a>
  
 </p>
+
 <p align="center">
+ <a ><img src="https://img.shields.io/github/issues-closed-raw/rinturaj/wacko" /></a>
   <a ><img src="https://img.shields.io/github/languages/code-size/rinturaj/wacko" /></a>
   <a ><img src="https://img.shields.io/github/repo-size/rinturaj/wacko" /></a>
-
- 
-</p>
-<p align="center">
   <a ><img src="https://img.shields.io/github/languages/count/rinturaj/wacko" /></a>
   <a ><img src="https://img.shields.io/github/languages/top/rinturaj/wacko" /></a>
-
-
+ 
 </p>
+
+<br/>
