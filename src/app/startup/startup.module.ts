@@ -8,7 +8,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 const route: Routes =
   [
-    { path: '', pathMatch: 'full', redirectTo: 'signin' },
+    { path: '', pathMatch: 'full', redirectTo: 'start' },
     { path: 'signin', component: SigninComponent },
     { path: 'start', component: GetstartedComponent },
   ]

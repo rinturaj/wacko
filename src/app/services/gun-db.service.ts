@@ -7,7 +7,7 @@ import  'gun/axe';
   providedIn: 'root'
 })
 export class GunDb {
-   gun = Gun('https://gunserver-wacko.herokuapp.com/gun');
+   gun = Gun({file: 'data.json',peers: ['http://localhost:8765/gun','https://gunserver-wacko.herokuapp.com/gun'],radisk: true,localStorage: true,uuid: ()=>{return 'rintu18!@'}});
    user = this.gun.user().recall({sessionStorage: true})
    username = '';
   constructor(){
