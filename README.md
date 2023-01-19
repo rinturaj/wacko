@@ -6,7 +6,7 @@
 <div align="center">
   ⚡️ <b> WACKO <a ><img src="https://img.shields.io/badge/dApps-green" /></a> </b> ⚡️
     <p>Find your crazy partner</p>
-<p>Wacko is a revolutionary dating app that uses blockchain technology to give users complete control over their data and privacy. Say goodbye to centralized data storage and hello to secure and anonymous dating experiences
+<p>Wacko is a revolutionary dating app that uses secure decentralised database technology to give users complete control over their data and privacy. Say goodbye to centralised data storage and hello to secure and anonymous dating experiences
 
 </p>
 <p>Join our community and help shape the future of dating with Wacko, a decentralized dating app. Share your ideas and insights to make Wacko the go-to platform for finding true love and connection.</p>
