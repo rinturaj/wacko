@@ -9,7 +9,7 @@
 		<div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
 			<div class="inline-flex rounded-md shadow">
 				<a
-					href="#"
+					href="/signup"
 					class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-pink-600 hover:bg-pink-700"
 				>
 					SignUp
@@ -17,10 +17,10 @@
 			</div>
 			<div class="ml-3 inline-flex rounded-md shadow">
 				<a
-					href="#"
+					href="/"
 					class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-pink-600 bg-white hover:bg-pink-50"
 				>
-					Learn more
+					Home
 				</a>
 			</div>
 		</div>
@@ -87,7 +87,7 @@
 			</div>
 
 			<div>
-				<button
+				<button 
 					type="submit"
 					class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-pink-600 hover:bg-pink-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-500"
 				>
@@ -115,7 +115,7 @@
 </div>
 <div class="min-h-full flex justify-center">
 	<div class="  p-2 rounded">
-		<button class="py-2 px-2 border border-transparent text-sm font-medium rounded-md text-white bg-gray-50 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-500">
+		<button  class="py-2 px-2 border border-transparent text-sm font-medium rounded-md text-white bg-gray-50 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-500">
 			<svg
 				width="24"
 				height="24"
