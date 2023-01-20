@@ -1,6 +1,6 @@
 {
   "dist/runtime/client/start.js": {
-    "file": "immutable/start-d79290b1.js",
+    "file": "immutable/start-e2eab358.js",
     "src": "dist/runtime/client/start.js",
     "isEntry": true,
     "imports": [
