@@ -1,0 +1,140 @@
+{
+  "dist/runtime/client/start.js": {
+    "file": "immutable/start-82c63508.js",
+    "src": "dist/runtime/client/start.js",
+    "isEntry": true,
+    "imports": [
+      "_index-195b0519.js"
+    ],
+    "dynamicImports": [
+      "src/routes/__layout.svelte",
+      "dist/runtime/components/error.svelte",
+      "src/routes/components/avatar.svelte",
+      "src/routes/index.svelte",
+      "src/routes/page/about.svelte",
+      "src/routes/page/account/update-image.svelte",
+      "src/routes/page/account/update-profile.svelte",
+      "src/routes/page/home.svelte",
+      "src/routes/page/profile.svelte",
+      "src/routes/signin.svelte",
+      "src/routes/signup.svelte"
+    ]
+  },
+  "src/routes/__layout.svelte": {
+    "file": "immutable/pages/__layout.svelte-45fd0cc5.js",
+    "src": "src/routes/__layout.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-195b0519.js"
+    ],
+    "css": [
+      "immutable/assets/__layout-976df31b.css"
+    ]
+  },
+  "dist/runtime/components/error.svelte": {
+    "file": "immutable/error.svelte-70317e3b.js",
+    "src": "dist/runtime/components/error.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-195b0519.js"
+    ]
+  },
+  "src/routes/components/avatar.svelte": {
+    "file": "immutable/pages/components/avatar.svelte-7c325914.js",
+    "src": "src/routes/components/avatar.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-195b0519.js"
+    ]
+  },
+  "src/routes/index.svelte": {
+    "file": "immutable/pages/index.svelte-07227bc0.js",
+    "src": "src/routes/index.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-195b0519.js"
+    ],
+    "css": [
+      "immutable/assets/index-43fe191c.css"
+    ]
+  },
+  "src/routes/page/about.svelte": {
+    "file": "immutable/pages/page/about.svelte-89af9631.js",
+    "src": "src/routes/page/about.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-195b0519.js"
+    ]
+  },
+  "src/routes/page/account/update-image.svelte": {
+    "file": "immutable/pages/page/account/update-image.svelte-e0fd3750.js",
+    "src": "src/routes/page/account/update-image.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-195b0519.js"
+    ]
+  },
+  "src/routes/page/account/update-profile.svelte": {
+    "file": "immutable/pages/page/account/update-profile.svelte-0c23387a.js",
+    "src": "src/routes/page/account/update-profile.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-195b0519.js"
+    ]
+  },
+  "src/routes/page/home.svelte": {
+    "file": "immutable/pages/page/home.svelte-73197f3a.js",
+    "src": "src/routes/page/home.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-195b0519.js",
+      "src/routes/components/avatar.svelte"
+    ]
+  },
+  "src/routes/page/profile.svelte": {
+    "file": "immutable/pages/page/profile.svelte-33adb9a4.js",
+    "src": "src/routes/page/profile.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-195b0519.js"
+    ]
+  },
+  "src/routes/signin.svelte": {
+    "file": "immutable/pages/signin.svelte-7dea1740.js",
+    "src": "src/routes/signin.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-195b0519.js"
+    ]
+  },
+  "src/routes/signup.svelte": {
+    "file": "immutable/pages/signup.svelte-894866cd.js",
+    "src": "src/routes/signup.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-195b0519.js"
+    ]
+  },
+  "_index-195b0519.js": {
+    "file": "immutable/chunks/index-195b0519.js"
+  },
+  "src/routes/index.css": {
+    "file": "immutable/assets/index-43fe191c.css",
+    "src": "src/routes/index.css"
+  },
+  "src/routes/__layout.css": {
+    "file": "immutable/assets/__layout-976df31b.css",
+    "src": "src/routes/__layout.css"
+  }
+}

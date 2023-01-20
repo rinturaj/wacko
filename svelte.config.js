@@ -12,8 +12,10 @@ const config = {
 	  ],
 
 	kit: {
-		adapter: adapter()
+		adapter: adapter(),
+		outDir: 'dist'
 	}
+	
 };
 
 export default config;
