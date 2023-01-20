@@ -3,7 +3,12 @@
 
 	import { onMount } from 'svelte';
 	import Avatar from './components/avatar.svelte';
+
+	import { inject } from '@vercel/analytics';
+
 	onMount(() => {
+		inject();
+
 		// @ts-ignore
 		var canvas,
 			ctx,
