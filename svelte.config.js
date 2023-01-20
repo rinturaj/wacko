@@ -14,10 +14,7 @@ const config = {
 
 	kit: {
 		adapter: adapter(),
-		outDir: 'dist',
-		paths: {
-			base: dev ? '' : '/wacko',
-		  },
+		outDir: 'dist'
 	}
 	
 };
