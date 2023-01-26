@@ -37,6 +37,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@vercel/analytics": "^0.1.8"
+		"@vercel/analytics": "^0.1.8",
+		"peerjs": "^1.4.7"
 	}
 }
