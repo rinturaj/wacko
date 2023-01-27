@@ -10,12 +10,14 @@ const config = {
 		preprocess({
 		  postcss: true,
 		}),
+		
 	  ],
 
 	kit: {
 		adapter: adapter(),
-		outDir: 'dist'
-	}
+		outDir: 'dist',
+		
+	},
 	
 };
 

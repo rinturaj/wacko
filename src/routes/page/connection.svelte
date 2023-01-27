@@ -1,33 +1,55 @@
 <script>
 	import { onMount } from 'svelte';
-	import { conn, connect, peer, pid, targetPid } from '../util/connection';
+	import { exclude_internal_props } from 'svelte/internal';
+	import { writable } from 'svelte/store';
+	import { conn, targetPid, peer } from '../util/connection';
+	let pid = writable();
 
-    var conenctionEstablished 
-	onMount(() => {
-		peer.on('connection', function (ctarget) {
-            conenctionEstablished = ctarget;
-			conenctionEstablished.on('data', function (data) {
-				// Will print 'hi!'
+	/**
+	 * @type {import("peerjs").DataConnection | null}
+	 */
+	let conenctionEstablished;
+
+	onMount(async () => {
+		let { Peer } = await await import('peerjs');
+
+		$peer = new Peer();
+		$peer.on('connection', function (ctarget) {
+			console.log($conn);
+			$conn = ctarget;
+			$conn.on('data', function (data) {
 				console.log(data);
 			});
 		});
-		peer.on('open', function (id) {
+		$peer.on('open', function (id) {
 			console.log('My peer ID is: ' + id);
-
-			pid.set(id);
+			$pid = id;
 		});
 	});
 
+	function connect(id) {
+		$targetPid = id;
+		$conn = $peer.connect(id);
+		$conn.on('open', function () {
+			// Receive messages
+			console.log('oppend');
+
+			$conn.on('data', function (data) {
+				console.log('Received', data);
+			});
+
+			// Send messages
+			$conn.send('Hello!');
+		});
+	}
+
 	let message = '';
 	function sendMessage() {
-        if(conenctionEstablished!=null){
-            conenctionEstablished.send(message);
-        }else{
-            conn.send(message);
-        }
-	
-	
+		$conn.send(message);
 	}
+	/**
+	 * @type {string}
+	 */
 	let targetPidLocal;
 </script>
 
