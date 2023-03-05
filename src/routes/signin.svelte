@@ -1,11 +1,10 @@
 <script>
-	import { pid } from "./util/connection";
-
-
+	import Toolbar from "./components/toolbar.svelte";
+	
 
 </script>
 
-
+<Toolbar></Toolbar>
 
 <div class="bg-gray-50">
 	<div
@@ -38,11 +37,7 @@
 <div class="min-h-full flex items-center flex-col justify-center py-12 px-4 sm:px-6 lg:px-8">
 	<div class="max-w-md w-full space-y-8">
 		<div>
-			<img
-				class="mx-auto h-12 w-auto"
-				src="src/assets/wackologo.png "
-				alt="Workflow"
-			/>
+			<img class="mx-auto h-12 w-auto" src="src/assets/wackologo.png " alt="Workflow" />
 			<h2 class="mt-6 text-center text-3xl font-extrabold text-gray-900">
 				Sign in to your account
 			</h2>
@@ -96,7 +91,7 @@
 			</div>
 
 			<div>
-				<button 
+				<button
 					type="submit"
 					class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-pink-600 hover:bg-pink-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-500"
 				>
@@ -124,7 +119,9 @@
 </div>
 <div class="min-h-full flex justify-center">
 	<div class="  p-2 rounded">
-		<button  class="py-2 px-2 border border-transparent text-sm font-medium rounded-md text-white bg-gray-50 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-500">
+		<button
+			class="py-2 px-2 border border-transparent text-sm font-medium rounded-md text-white bg-gray-50 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-500"
+		>
 			<svg
 				width="24"
 				height="24"
