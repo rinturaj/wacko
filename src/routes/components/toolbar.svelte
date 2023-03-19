@@ -3,7 +3,7 @@
 import ThemeToggle from './themeToggle.svelte';
 </script>
 
-<div class=" max-w px-4 sm:px-6 lg:px-8 dark:bg-slate-900">
+<div class=" max-w sticky top-0  px-4 sm:px-6 lg:px-8 bg-th-primary">
 	<div class="flex justify-between items-center px-2">
 		<div>
 			<h6

@@ -12,18 +12,35 @@
 
 		// Toggle Dark Function
 		const toggleDark = () => {
+
+			const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: Dark)').matches
+			console.log(prefersDark);
+			if(prefersDark){
+				flag = true;
+				toggleClass();
+			}
+
 			toggler.addEventListener('click', () => {
-				const html = document.documentElement;
+				toggleClass();
+			});
+		};
+	
+	
+		const toggleClass =() =>{
+			const html = document.documentElement;
 				toggler.children[0].classList.toggle('translate-x-6');
 				if (flag) {
 					html.classList.add('dark');
+					// html.classList.add('translate-');
+
 				} else {
 					html.classList.remove('dark');
 				}
 				flag = !flag;
-			});
-		};
+		}
+
 		toggleDark();
+
 	});
 </script>
 

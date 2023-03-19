@@ -6,11 +6,11 @@
 
 <Toolbar></Toolbar>
 
-<div class="bg-gray-50">
+<div class="bg-th-secondary">
 	<div
 		class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between"
 	>
-		<h2 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+		<h2 class="text-3xl font-extrabold tracking-tight sm:text-4xl">
 			<span class="block">Not Registered?</span>
 			<span class="block text-pink-600">Create your free account today.</span>
 		</h2>
@@ -34,7 +34,7 @@
 		</div>
 	</div>
 </div>
-<div class="min-h-full flex items-center flex-col justify-center py-12 px-4 sm:px-6 lg:px-8">
+<div class="min-h-full bg-th-primary flex items-center flex-col justify-center py-12 px-4 sm:px-6 lg:px-8">
 	<div class="max-w-md w-full space-y-8">
 		<div>
 			<img class="mx-auto h-12 w-auto" src="src/assets/wackologo.png " alt="Workflow" />
