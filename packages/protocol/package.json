@@ -1,0 +1,17 @@
+{
+  "name": "@wacko/protocol",
+  "version": "0.0.1",
+  "private": true,
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+      "@wacko/core": "workspace:*"
+  },
+  "devDependencies": {
+      "typescript": "^5.0.0"
+  }
+}

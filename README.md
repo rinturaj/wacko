@@ -39,3 +39,52 @@
 </p>
 
 <br/>
+
+
+# Wacko
+
+Wacko is a privacy-first, decentralized dating app.
+Strangers first. Truth later.
+
+## Tech Stack
+- **Framework**: Svelte (Web & Extension)
+- **Build Tool**: Vite
+- **Styling**: Tailwind CSS
+- **Storage**: Encrypted IndexedDB (`@wacko/storage`)
+- **Crypto**: WebCrypto API (`@wacko/crypto`)
+- **Monorepo**: pnpm workspaces
+
+## Structure
+
+- `apps/web`: Svelte PWA (The primary dating experience)
+- `apps/extension`: Chrome Extension (Manifest v3 companion)
+- `packages/core`: Domain models and matching algorithms
+- `packages/crypto`: WebCrypto wrappers and key management
+- `packages/storage`: Encrypted local persistence
+- `packages/protocol`: Relay synchronization logic
+- `packages/ui`: Shared UI components and Tailwind config
+
+## Development
+
+1. Install dependencies:
+   ```bash
+   pnpm install
+   ```
+
+2. Start Web App:
+   ```bash
+   pnpm dev --filter web
+   ```
+
+3. Build Extension:
+   ```bash
+   pnpm build --filter extension
+   ```
+   Load `apps/extension/dist` (or `build`) as unpacked extension in Chrome.
+
+## Privacy
+- No centralized database.
+- End-to-end encrypted messaging.
+- Local-first matching.
+
+
