@@ -1,13 +1,18 @@
 {
   "name": "wacko-monorepo",
   "private": true,
+  "packageManager": "pnpm@10.33.0",
   "scripts": {
-    "dev": "pnpm -r dev",
-    "build": "pnpm -r build",
-    "test": "pnpm -r test",
-    "lint": "pnpm -r lint"
+    "dev": "turbo dev --filter=wacko-web",
+    "dev:all": "turbo dev",
+    "start": "turbo dev --filter=wacko-web",
+    "build": "turbo build",
+    "test": "turbo test",
+    "check": "turbo check",
+    "lint": "turbo lint"
   },
   "devDependencies": {
+    "turbo": "^2.11.9",
     "typescript": "^5.6.3",
     "vite": "^6.0.0"
   },
