@@ -74,12 +74,23 @@ pnpm test
 ```
 Runs the full suite of cryptographic tests (`@wacko/crypto`) and BitSocial P2P protocol tests (`@wacko/protocol`) with Turbo caching.
 
-### 4. Build All Packages
+### 4. Build All Packages & Extension
 ```bash
 pnpm build
 ```
 
-> **Pro Tip**: To test live stranger discovery and messaging locally, open two browser tabs or an incognito window. Each tab acts as an independent stranger on the local BitSocial mesh!
+### 5. Run Chrome Extension in Dev Mode
+```bash
+pnpm --filter=wacko-extension dev
+# or build unpacked extension:
+pnpm --filter=wacko-extension build
+```
+To load in Google Chrome:
+1. Open `chrome://extensions`
+2. Enable **Developer mode** (top right toggle)
+3. Click **Load unpacked** and select `apps/wacko-extension/dist`
+
+> **Pro Tip**: To test live stranger discovery and messaging locally, mingle between the Chrome extension and a browser tab at [http://localhost:5173](http://localhost:5173). Each environment acts as an independent stranger on the local BitSocial mesh!
 
 ---
 

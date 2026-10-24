@@ -1,45 +1,180 @@
-html,
-body {
-  width: 300px;
-  height: 400px;
-  padding: 0;
+@import 'tailwindcss';
+
+:root {
+  /* Mid-Century Modern Primary & Neutral Palette */
+  --color-warm-ivory: #F5F0E6;
+  --color-soft-white: #FCFAF5;
+  --color-mustard: #D5A62A;
+  --color-burnt-orange: #C65D36;
+  --color-olive: #74794B;
+  --color-teal: #427C7A;
+  --color-dark-walnut: #43352C;
+  --color-charcoal: #292925;
+  --color-warm-gray: #D8D0C4;
+  --color-muted-taupe: #A69A89;
+}
+
+html {
+  box-sizing: border-box;
+  width: 440px;
+  height: 600px;
+  font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: var(--color-warm-ivory);
+  color: var(--color-charcoal);
   margin: 0;
+  padding: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 body {
-  background-color: rgb(36, 36, 36);
+  width: 440px;
+  height: 600px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: var(--color-warm-ivory);
+  color: var(--color-charcoal);
+  caret-color: var(--color-burnt-orange);
+  background-image: 
+    radial-gradient(circle at 10% 20%, rgba(213, 166, 42, 0.05) 0%, transparent 35%),
+    radial-gradient(circle at 90% 80%, rgba(198, 93, 54, 0.05) 0%, transparent 40%),
+    radial-gradient(circle at 50% 50%, rgba(66, 124, 122, 0.04) 0%, transparent 45%);
 }
 
-body > div {
+#app {
+  width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  align-items: center;
-  justify-content: center;
+  overflow: hidden;
 }
 
-img {
-  width: 200px;
-  height: 200px;
+/* If opened as tab or detached window */
+@media (min-width: 600px) {
+  html, body {
+    width: 100vw;
+    height: 100vh;
+    max-height: none;
+  }
 }
 
-h1 {
-  font-size: 18px;
-  color: white;
-  font-weight: bold;
-  margin: 0;
+h1, h2, h3, h4, .font-display {
+  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  letter-spacing: -0.02em;
 }
 
-p {
-  color: white;
-  opacity: 0.7;
-  margin: 0;
+::selection {
+  background-color: var(--color-burnt-orange);
+  color: var(--color-soft-white);
 }
 
-code {
-  font-size: 12px;
-  padding: 2px 4px;
-  background-color: #ffffff24;
-  border-radius: 2px;
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-warm-ivory);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-warm-gray);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-muted-taupe);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-burnt-orange);
+  outline-offset: 2px;
+}
+
+@keyframes radar-arc {
+  0% { transform: scale(0.85); opacity: 0.8; }
+  100% { transform: scale(2.2); opacity: 0; }
+}
+
+@keyframes card-settle {
+  0% { transform: scale(0.97) translateY(8px); opacity: 0.7; }
+  100% { transform: scale(1) translateY(0); opacity: 1; }
+}
+
+@keyframes match-slide-left {
+  0% { transform: translateX(-32px); opacity: 0; }
+  100% { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes match-slide-right {
+  0% { transform: translateX(32px); opacity: 0; }
+  100% { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes match-heart-pop {
+  0% { transform: scale(0); opacity: 0; }
+  70% { transform: scale(1.15); opacity: 1; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes msg-pop {
+  0% { transform: translateY(4px); opacity: 0.8; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes step-slide-forward {
+  0% { transform: translateX(20px); opacity: 0; }
+  100% { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes step-slide-backward {
+  0% { transform: translateX(-20px); opacity: 0; }
+  100% { transform: translateX(0); opacity: 1; }
+}
+
+.animate-radar-arc-1 {
+  animation: radar-arc 3s cubic-bezier(0.16, 1, 0.3, 1) infinite;
+}
+.animate-radar-arc-2 {
+  animation: radar-arc 3s cubic-bezier(0.16, 1, 0.3, 1) infinite 1s;
+}
+.animate-radar-arc-3 {
+  animation: radar-arc 3s cubic-bezier(0.16, 1, 0.3, 1) infinite 2s;
+}
+
+.animate-card-settle {
+  animation: card-settle 260ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-step-forward {
+  animation: step-slide-forward 240ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-step-backward {
+  animation: step-slide-backward 240ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-match-left {
+  animation: match-slide-left 360ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-match-right {
+  animation: match-slide-right 360ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-heart-pop {
+  animation: match-heart-pop 420ms cubic-bezier(0.34, 1.56, 0.64, 1) forwards 100ms;
+}
+
+.animate-msg {
+  animation: msg-pop 160ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

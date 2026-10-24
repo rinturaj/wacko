@@ -1,7 +1,7 @@
-import browser from "webextension-polyfill";
+console.log("Wacko background service worker initialized");
 
-console.log("Hello from the background!");
-
-browser.runtime.onInstalled.addListener((details) => {
-  console.log("Extension installed:", details);
-});
+if (typeof chrome !== "undefined" && chrome.runtime?.onInstalled) {
+  chrome.runtime.onInstalled.addListener((details: any) => {
+    console.log("Wacko extension installed:", details);
+  });
+}
