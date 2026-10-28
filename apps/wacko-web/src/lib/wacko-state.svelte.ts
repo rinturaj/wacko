@@ -65,7 +65,10 @@ class WackoStateManager {
   savedVaultRecord = $state<WackoVaultRecord | null>(null);
 
   constructor() {
-    this.p2pClient = new BitSocialP2PClient();
+    const relayRpcUrl =
+      (typeof import.meta !== 'undefined' && (import.meta as any).env?.VITE_BITSOCIAL_RPC_URL) ||
+      undefined;
+    this.p2pClient = new BitSocialP2PClient(relayRpcUrl ? { rpcUrl: relayRpcUrl } : {});
     this.setupProtocolListeners();
 
     // Check if an encrypted vault was stored in IndexedDB from a previous session
